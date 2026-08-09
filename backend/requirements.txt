@@ -1,0 +1,9 @@
+fastapi==0.115.0
+uvicorn[standard]>=0.31.1
+pydantic==2.11.0
+google-genai==2.8.0
+mcp==1.29.0
+python-dotenv==1.0.1
+langfuse
+langchain
+langchain-google-genai

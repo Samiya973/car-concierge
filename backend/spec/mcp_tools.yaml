@@ -1,0 +1,47 @@
+# MCP Tool Definitions Contract
+# These represent the exact capabilities the agent has access to via the FastMCP server.
+# By defining these upfront, we ensure the backend implementation strictly matches the expected behavior.
+
+tools:
+  - name: search_listings
+    description: "Search car listings in the marketplace dataset based on optional filters."
+    parameters:
+      type: object
+      properties:
+        category:
+          type: string
+          description: "Vehicle category (e.g., SUV, Sedan)."
+        intent:
+          type: string
+          description: "Must be 'buy' or 'rent'."
+        max_price:
+          type: number
+          description: "Maximum budget in INR."
+        fuel_type:
+          type: string
+          description: "Fuel type (e.g., electric, petrol)."
+        location:
+          type: string
+          description: "City location."
+        min_seats:
+          type: integer
+          description: "Minimum number of seats required."
+
+  - name: get_insurance_estimate
+    description: "Calculate an estimated insurance quote for a given vehicle configuration."
+    parameters:
+      type: object
+      properties:
+        brand:
+          type: string
+          description: "The vehicle brand."
+        model:
+          type: string
+          description: "The specific vehicle model."
+        price:
+          type: number
+          description: "The sale price or daily rental price."
+        intent:
+          type: string
+          description: "Must be 'buy' or 'rent'."
+      required: ["brand", "model", "price", "intent"]
