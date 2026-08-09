@@ -1,5 +1,4 @@
-```markdown
-<div align="center">
+
 
 # 🚗 AI Car Concierge (Car Matchmaker)
 ### *Production-Grade Multi-Agent Automotive Concierge Powered by MCP, Langfuse, FastAPI, and Next.js*
@@ -80,9 +79,8 @@ To ensure enterprise-grade reliability, prompt safety, and latency monitoring, t
       │  Google GenAI    │          │    Observability │
       └──────────────────┘          └──────────────────┘
 
-```
 
----
+
 
 ## 🐳 Docker Deployment
 
