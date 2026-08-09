@@ -18,3 +18,9 @@ __pycache__/
 # OS Files
 .DS_Store
 Thumbs.db
+
+# Environment files
+.env
+.env.local
+backend/.env
+frontend/.env.local
